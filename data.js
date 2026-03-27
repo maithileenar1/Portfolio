@@ -12,10 +12,10 @@ const portfolioData = {
     skills: {
         "Languages & Scripting": ["Python (Pandas, Scikit-learn, PySpark)", "SQL", "R", "AL Language"],
         "ML & AI": ["Supervised/Unsupervised Learning", "Time-Series Forecasting", "SMOTE", "Gradient Boosting", "Classification Models"],
-        "Data Engineering": ["ETL Pipelines", "Medallion Architecture", "Delta Lake", "Star Schema", "Data Quality Validation"],
+        "Data Engineering": ["ETL Pipelines", "Medallion Architecture", "Delta Lake", "Star Schema"],
         "Cloud & Platforms": ["Microsoft Azure", "Microsoft Fabric", "Microsoft Dynamics 365", "Power BI (DAX)"],
-        "Development & Tools": ["Git", "Agile/Scrum", "Streamlit", "Plotly", "Jupyter", "REST APIs"],
-        "Domains": ["Healthcare Analytics", "Retail Analytics", "CRM Operations", "Risk & Assurance", "Government Data"]
+        "Development & Tools": ["Git", "Agile/Scrum", "Streamlit", "Plotly"],
+        "Domains": ["Healthcare Analytics", "Retail Analytics", "CRM Operations", "Risk & Assurance"]
     },
     experience: [
         {
