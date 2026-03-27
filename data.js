@@ -1,7 +1,7 @@
 const portfolioData = {
     personal: {
         name: "Maithilee Dolharkar",
-        title: "Technology Graduate | Engineering & QA | Data Governance",
+        title: "Technology Graduate | Machine Learning | Data Analysis",
         location: "Melbourne, VIC",
         phone: "(+61) 469 387 557",
         email: "maithilee478@gmail.com",
@@ -108,7 +108,7 @@ const portfolioData = {
                 {
                     title: "Event Volunteer",
                     description: "F1 Australian Grand Prix, Australian Open, and major Melbourne events with Spark Event Group.",
-                    image: null,
+                    image: "yum.jpeg",
                     link: null,
                     linkLabel: null
                 }
