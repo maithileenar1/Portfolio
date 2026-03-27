@@ -11,9 +11,11 @@ const portfolioData = {
     summary: "Master of Data Science graduate (Deakin University, Jun 2026) with two years of professional experience in software development, data engineering, and analytics across enterprise and government domains. Proficient in Python, SQL, Azure, and Agile/SDLC delivery. Eager to contribute across software engineering, QA, and data governance rotations. Experienced in AWS and API Testing, with a strong emphasis on optimizing customer experience utilizing database management techniques. Holds full Australian work rights and is available to commence July 2026.",
     skills: {
         "Languages & Scripting": ["Python (Pandas, Scikit-learn, PySpark)", "SQL", "R", "AL Language"],
-        "Software & Engineering": ["SDLC", "ETL Pipelines", "Medallion Architecture", "Delta Lake", "Star Schema", "REST APIs"],
-        "Cloud & Platforms": ["Microsoft Azure", "Microsoft Fabric", "Power BI (DAX)", "Microsoft Dynamics 365", "AWS"],
-        "Tools & Practices": ["Git", "Agile/Scrum", "Streamlit", "Plotly", "Jupyter", "Microsoft Office Suite", "Microsoft Excel"]
+        "ML & AI": ["Supervised/Unsupervised Learning", "Time-Series Forecasting", "SMOTE", "Gradient Boosting", "Classification Models"],
+        "Data Engineering": ["ETL Pipelines", "Medallion Architecture", "Delta Lake", "Star Schema", "Data Quality Validation"],
+        "Cloud & Platforms": ["Microsoft Azure", "Microsoft Fabric", "Microsoft Dynamics 365", "Power BI (DAX)"],
+        "Development & Tools": ["Git", "Agile/Scrum", "Streamlit", "Plotly", "Jupyter", "REST APIs"],
+        "Domains": ["Healthcare Analytics", "Retail Analytics", "CRM Operations", "Risk & Assurance", "Government Data"]
     },
     experience: [
         {
