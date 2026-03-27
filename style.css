@@ -1533,24 +1533,7 @@ footer {
 /* ════════════════════════════════════════════
    RESPONSIVE — NEW ELEMENTS
 ════════════════════════════════════════════ */
-@media (max-width: 1024px) {
-    .hero-layout {
-        grid-template-columns: 1fr 300px;
-        gap: 2rem;
-    }
-}
-
 @media (max-width: 768px) {
-    .hero-layout {
-        grid-template-columns: 1fr;
-        padding-top: 7rem;
-        gap: 2rem;
-    }
-
-    .hero-image-wrap {
-        order: -1;
-    }
-
     #achievements-container {
         grid-template-columns: 1fr;
     }
