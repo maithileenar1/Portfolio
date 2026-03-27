@@ -8,7 +8,7 @@ const portfolioData = {
         linkedin: "https://www.linkedin.com/in/maithilee-dolharkar-647b581ba/",
         profileImage: "image.png"
     },
-    summary: "Master of Data Science graduate (Deakin University, Jun 2026) with two years of professional experience in software development, data engineering, and analytics across enterprise and government domains. Proficient in Python, SQL, Azure, and Agile/SDLC delivery. Eager to contribute across software engineering, QA, and data governance rotations. Experienced in AWS and API Testing, with a strong emphasis on optimizing customer experience utilizing database management techniques. Holds full Australian work rights and is available to commence July 2026.",
+    summary: "Master of Data Science graduate (Deakin University, Jun 2026) with two years of experience in data engineering, software development, and analytics across banking, healthcare, retail, and government domains. Skilled in Python, SQL, and  platforms including Microsoft Fabric, with hands-on experience building ETL/ELT pipelines, data models, and scalable analytics solutions. Strong understanding of Agile/SDLC practices, API integration and testing. Proven ability to translate complex data into actionable insights while delivering reliable, user-focused solutions. Holds full Australian work rights and available to commence July 2026.",
     skills: {
         "Languages & Scripting": ["Python (Pandas, Scikit-learn, PySpark)", "SQL", "R", "AL Language"],
         "ML & AI": ["Supervised/Unsupervised Learning", "Time-Series Forecasting", "SMOTE", "Gradient Boosting", "Classification Models"],
