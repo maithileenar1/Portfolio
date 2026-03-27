@@ -1,0 +1,94 @@
+const portfolioData = {
+    personal: {
+        name: "Maithilee Dolharkar",
+        title: "Technology Graduate | Engineering & QA | Data Governance",
+        location: "Melbourne, VIC",
+        phone: "(+61) 469 387 557",
+        email: "maithilee478@gmail.com",
+        linkedin: "https://linkedin.com/in/" // Placeholder
+    },
+    summary: "Master of Data Science graduate (Deakin University, Jun 2026) with two years of professional experience in software development, data engineering, and analytics across enterprise and government domains. Proficient in Python, SQL, Azure, and Agile/SDLC delivery. Eager to contribute across software engineering, QA, and data governance rotations. Experienced in AWS and API Testing, with a strong emphasis on optimizing customer experience utilizing database management techniques. Holds full Australian work rights and is available to commence July 2026.",
+    skills: {
+        "Languages & Scripting": ["Python (Pandas, Scikit-learn, PySpark)", "SQL", "R", "AL Language"],
+        "Software & Engineering": ["SDLC", "ETL Pipelines", "Medallion Architecture", "Delta Lake", "Star Schema", "REST APIs"],
+        "Cloud & Platforms": ["Microsoft Azure", "Microsoft Fabric", "Power BI (DAX)", "Microsoft Dynamics 365", "AWS"],
+        "QA & Testing": ["Data Quality Validation", "Defect Management", "Pipeline Testing", "Manual Testing", "Automation", "Documentation"],
+        "Tools & Practices": ["Git", "Agile/Scrum", "Streamlit", "Plotly", "Jupyter", "Microsoft Office Suite", "Microsoft Excel"],
+        "Data Governance": ["Data Mapping", "Data Modelling", "RLS", "Schema Design", "Compliance Frameworks"]
+    },
+    experience: [
+        {
+            title: "Data Analyst",
+            company: "NextOn Foods Private Limited",
+            location: "Pune, India",
+            period: "Aug 2023 – Apr 2024",
+            responsibilities: [
+                "Designed and maintained ETL data pipelines processing 50,000+ rows of sales data, built demand forecasting models, and delivered 5+ Power BI dashboards which reduced stock wastage by 12% and cutting manual reporting time by 22%.",
+                "Applied structured testing and validation at each pipeline stage, ensuring data accuracy and integrity for stakeholder reporting; followed best practices aligned with SDLC principles, incorporating API Testing protocols to enhance data flow efficiency."
+            ]
+        },
+        {
+            title: "Software Trainee — Data & CRM",
+            company: "Xebia (Client: GAC Business Solution)",
+            location: "Hyderabad, India",
+            period: "Aug 2022 – Jun 2023",
+            responsibilities: [
+                "Developed and tested AL language solutions within Microsoft Dynamics 365, integrated Power BI dashboards, and improved data accuracy across sales and operations by 10% using Microsoft Azure cloud platforms.",
+                "Worked within an Agile/Scrum delivery framework across a multidisciplinary team, contributing to sprint planning, defect resolution, and stakeholder reporting ,building the collaborative, client-focused skills central to VicRoads' graduate program, with a focus on enhancing customer experience through innovative mobile application features."
+            ]
+        }
+    ],
+    projects: [
+        {
+            title: "Australian Healthcare & Hospital Performance Analytics Platform",
+            tech: ["Microsoft Fabric", "Data Engineering", "Data Governance"],
+            details: [
+                "Architected a full-stack Microsoft Fabric platform (Medallion Architecture) ingesting 5 government health datasets via automated pipelines, with data quality validation gates blocking refresh on failures which are directly applicable to VicRoads' data governance and registration/licensing modernization goals, incorporating coding best practices and digital transformation strategies.",
+                "Designed a Gold star schema with data mapping, modelling, and RLS by state/LHN, ensuring accurate, well governed data for analytics and decision-making across government stakeholders.",
+                "Produced comprehensive technical documentation across all pipeline stages, demonstrating the written communication and governance rigour expected in engineering and QA roles."
+            ]
+        },
+        {
+            title: "DataBytes Discount Mate — AI-Powered Supermarket Deal Prediction",
+            tech: ["Python", "SQL", "Agile"],
+            details: [
+                "Built an end-to-end ML application using Python scripting and SQL queries across 471,495 price records from 5 supermarket chains which demonstrated full SDLC delivery from design through to deployment.",
+                "Resolved a 2.07:1 class imbalance through iterative model testing and evaluation, improving recall from 14% to 81% applying systematic QA thinking to algorithm refinement.",
+                "Deployed an interactive Streamlit web application with real-time predictions and seasonal trend analysis, showcasing practical software engineering and front-end delivery skills."
+            ]
+        },
+        {
+            title: "Survival Prediction for Liver Cirrhosis",
+            tech: ["Clinical ML", "Testing & Validation", "Risk Classification"],
+            details: [
+                "Built and benchmarked 6 classification models on clinical data, applying rigorous testing methodology to select the optimal model (Logistic Regression, F1-weighted: 0.7436) —mirroring QA practices of defect identification and iterative refinement.",
+                "Applied dual feature importance methodology (ANOVA F-test + Permutation Importance) to validate model reliability, demonstrating the analytical and quality assurance mindset valued in technology roles."
+            ]
+        }
+    ],
+    education: [
+        {
+            degree: "Master of Data Science",
+            institution: "Deakin University, Melbourne",
+            period: "Expected Jun 2026",
+            details: "WAM: 8 | Relevant coursework: Machine Learning, Data Engineering, Statistical Modelling, Mathematics for AI"
+        },
+        {
+            degree: "BTech in Computer Science Engineering",
+            institution: "CMR Engineering College, India",
+            period: "Graduated",
+            details: "CGPA: 7.74"
+        }
+    ],
+    achievements: [
+        {
+            period: "Jul 2023",
+            details: [
+                "GovHack Australia — Honourable Mention: Identified $15M in regenerative economy potential and projected 25% carbon emission reduction through smart infrastructure analysis for Victoria's green transit strategy.",
+                "Freelance Python educator to 10+ students, demonstrating communication skills and ability to explain technical concepts clearly to diverse audiences.",
+                "Event volunteer: F1 Australian Grand Prix, Australian Open, and major Melbourne events with Spark Event Group."
+            ]
+        }
+    ]
+};
+// Accessible globally via classic script tag
