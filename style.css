@@ -1538,6 +1538,11 @@ footer {
         grid-template-columns: 1fr 300px;
         gap: 2rem;
     }
+
+    .hero-image-frame {
+        width: 280px;
+        height: 330px;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1549,7 +1554,17 @@ footer {
 
     .hero-image-wrap {
         order: -1;
-        /* Image appears above text on mobile */
+        /* image appears above text on mobile */
+    }
+
+    .hero-image-frame {
+        width: 210px;
+        height: 250px;
+    }
+
+    .image-corner {
+        width: 14px;
+        height: 14px;
     }
 
     #achievements-container {
