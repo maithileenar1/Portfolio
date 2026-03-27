@@ -98,13 +98,8 @@ const portfolioData = {
                     link: "https://www.linkedin.com/feed/update/urn:li:activity:7274901392098496512/", // Replace with the LinkedIn post link showing winners
                     linkLabel: "View on LinkedIn"
                 },
-                {
-                    title: "Freelance Python Educator",
-                    description: "Taught Python to 10+ students, demonstrating communication skills and ability to explain technical concepts clearly to diverse audiences.",
-                    image: null,
-                    link: null,
-                    linkLabel: null
-                },
+
+
                 {
                     title: "Event Volunteer",
                     description: "F1 Australian Grand Prix, Australian Open, and major Melbourne events with Spark Event Group.",

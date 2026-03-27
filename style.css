@@ -903,7 +903,7 @@ footer {
 ════════════════════════════════════════════ */
 .hero-layout {
     display: grid;
-    grid-template-columns: 1fr 380px;
+    grid-template-columns: 1fr 420px;
     gap: 3rem;
     align-items: center;
     min-height: 100vh;
@@ -926,8 +926,8 @@ footer {
 
 .hero-image-frame {
     position: relative;
-    width: 320px;
-    height: 380px;
+    width: 360px;
+    height: 430px;
     overflow: hidden;
     border: 1px solid var(--border-glow);
     border-radius: 4px;
@@ -943,12 +943,16 @@ footer {
     object-fit: cover;
     object-position: top center;
     display: block;
+    transform: scale(1.18);
+    transform-origin: top center;
     filter: grayscale(20%) contrast(1.05) brightness(0.9);
     transition: var(--transition);
 }
 
 .hero-image-frame:hover .hero-profile-img {
     filter: grayscale(0%) contrast(1.1) brightness(1);
+    transform: scale(1.22);
+    transform-origin: top center;
 }
 
 /* Animated scan line over the image */
@@ -1156,10 +1160,10 @@ footer {
 ════════════════════════════════════════════ */
 @media (max-width: 1024px) {
     .hero-layout {
-        grid-template-columns: 1fr 280px;
+        grid-template-columns: 1fr 300px;
         gap: 2rem;
     }
-    .hero-image-frame { width: 260px; height: 310px; }
+    .hero-image-frame { width: 280px; height: 330px; }
 }
 
 @media (max-width: 768px) {
@@ -1171,7 +1175,7 @@ footer {
     .hero-image-wrap {
         order: -1;                /* image appears above text on mobile */
     }
-    .hero-image-frame { width: 200px; height: 240px; }
+    .hero-image-frame { width: 210px; height: 250px; }
     .image-corner { width: 14px; height: 14px; }
     #achievements-container { grid-template-columns: 1fr; }
 }
