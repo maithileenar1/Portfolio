@@ -103,7 +103,7 @@ const portfolioData = {
                 {
                     title: "Event Volunteer",
                     description: "F1 Australian Grand Prix, Australian Open, and major Melbourne events with Spark Event Group.",
-                    image: "assets/certs/yum.jpeg",
+                    image: "yum.jpeg",
                     link: null,
                     linkLabel: null
                 }
