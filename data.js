@@ -48,11 +48,12 @@ const portfolioData = {
     projects: [
         {
             title: "Australian Healthcare & Hospital Performance Analytics Platform",
-            tech: ["Microsoft Fabric", "Data Engineering", "Data Governance"],
+            tech: ["Microsoft Fabric", "Data Engineering"],
             details: [
-                "Architected a full-stack Microsoft Fabric platform (Medallion Architecture) ingesting 5 government health datasets via automated pipelines, with data quality validation gates blocking refresh on failures — directly applicable to data governance and registration/licensing modernization goals.",
-                "Designed a Gold star schema with data mapping, modelling, and RLS by state/LHN, ensuring accurate, well-governed data for analytics and decision-making across government stakeholders.",
-                "Produced comprehensive technical documentation across all pipeline stages, demonstrating written communication and governance rigour expected in engineering and QA roles."
+                "Architected a Microsoft Fabric Medallion pipeline ingesting 800,000+ records from 5 Australian government health APIs, with automated quality gates blocking refresh on failures.",
+                "Built Bronze-to-Silver PySpark transformation layer across 8 Delta tables, standardising multi-format sources (REST API, CSV, Excel) with full audit trail and lineage tracking.",
+                "Designed Gold star schema with Row-Level Security by State/LHN, enabling governed analytics access for cross-government stakeholders across hospital, PBS, and Medicare datasets.",
+                "Produced end-to-end technical documentation across all pipeline stages covering architecture, transformation logic, and error resolution for a production healthcare analytics platform."
             ]
         },
         {
@@ -104,8 +105,8 @@ const portfolioData = {
 
                 {
                     title: "Event Volunteer",
-                    description: "F1 Australian Grand Prix, Australian Open, and major Melbourne events with Spark Event Group.",
-                    image: "yum.jpeg",
+                    description: "Volunteered at F1 Australian Grand Prix, Australian Open, and major Melbourne sporting events with Spark Event Group. Gained hands-on experience in large-scale event operations, crowd management, and team coordination across high-pressure environments.",
+                    image: "yum1.png",
                     link: null,
                     linkLabel: null
                 }
