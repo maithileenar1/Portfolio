@@ -17,9 +17,9 @@
     --text-dim: #3d7a5e;
     --border-glow: rgba(0, 255, 136, 0.25);
     --border-subtle: rgba(0, 255, 136, 0.08);
-    --terminal-font: 'Share Tech Mono', monospace;
-    --heading-font: 'Orbitron', sans-serif;
-    --body-font: 'Inter', sans-serif;
+    --terminal-font: 'Consolas', 'Monaco', 'Courier New', monospace;
+    --heading-font: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+    --body-font: 'Segoe UI', 'Helvetica Neue', 'Arial', sans-serif;
     --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
@@ -400,7 +400,7 @@ section {
 
 #hero-name {
     font-family: var(--heading-font);
-    font-size: clamp(2.5rem, 7vw, 5rem);
+    font-size: clamp(2rem, 5vw, 3.5rem);
     font-weight: 900;
     letter-spacing: 4px;
     line-height: 1.1;
@@ -1281,29 +1281,44 @@ footer {
 
 .hero-image-frame {
     position: relative;
-    width: 320px;
+    width: 380px;
     height: 380px;
     overflow: hidden;
-    border: 1px solid var(--border-glow);
-    border-radius: 4px;
+    border: 3px solid var(--neon-green);
+    /* Thicker green border */
+    border-radius: 50%;
     box-shadow:
-        0 0 20px rgba(0, 255, 136, 0.1),
-        0 0 60px rgba(0, 255, 136, 0.05),
-        inset 0 0 30px rgba(0, 0, 0, 0.5);
+        0 0 20px var(--neon-green),
+        0 0 40px rgba(0, 255, 136, 0.5),
+        0 0 60px rgba(0, 255, 136, 0.3),
+        inset 0 0 30px rgba(0, 0, 0, 0.3);
 }
 
 .hero-profile-img {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    object-position: top center;
+    object-position: center center;
     display: block;
-    filter: grayscale(20%) contrast(1.05) brightness(0.9);
+    filter: grayscale(0%) contrast(1.1) brightness(1);
+    /* Crisper - removed grayscale */
     transition: var(--transition);
+    image-rendering: -webkit-optimize-contrast;
+    /* Makes image sharper */
+    image-rendering: crisp-edges;
 }
 
 .hero-image-frame:hover .hero-profile-img {
-    filter: grayscale(0%) contrast(1.1) brightness(1);
+    filter: grayscale(0%) contrast(1.15) brightness(1.05);
+    transform: scale(1.02);
+}
+
+.hero-image-frame:hover {
+    border-color: var(--neon-cyan);
+    box-shadow:
+        0 0 30px var(--neon-cyan),
+        0 0 50px rgba(0, 229, 255, 0.6),
+        0 0 80px rgba(0, 229, 255, 0.4);
 }
 
 /* Animated scan line over the image */
@@ -1333,37 +1348,11 @@ footer {
 }
 
 /* Corner brackets (decorative scanning corners) */
+
+
 .image-corner {
-    position: absolute;
-    width: 20px;
-    height: 20px;
-    border-color: var(--neon-green);
-    border-style: solid;
-    box-shadow: 0 0 8px var(--neon-green);
-}
-
-.image-corner.tl {
-    top: -8px;
-    left: -8px;
-    border-width: 2px 0 0 2px;
-}
-
-.image-corner.tr {
-    top: -8px;
-    right: -8px;
-    border-width: 2px 2px 0 0;
-}
-
-.image-corner.bl {
-    bottom: -8px;
-    left: -8px;
-    border-width: 0 0 2px 2px;
-}
-
-.image-corner.br {
-    bottom: -8px;
-    right: -8px;
-    border-width: 0 2px 2px 0;
+    display: none;
+    /* Hide corners for circular image */
 }
 
 /* ════════════════════════════════════════════
@@ -1549,11 +1538,6 @@ footer {
         grid-template-columns: 1fr 300px;
         gap: 2rem;
     }
-
-    .hero-image-frame {
-        width: 280px;
-        height: 330px;
-    }
 }
 
 @media (max-width: 768px) {
@@ -1565,17 +1549,6 @@ footer {
 
     .hero-image-wrap {
         order: -1;
-        /* image appears above text on mobile */
-    }
-
-    .hero-image-frame {
-        width: 210px;
-        height: 250px;
-    }
-
-    .image-corner {
-        width: 14px;
-        height: 14px;
     }
 
     #achievements-container {
