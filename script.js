@@ -92,6 +92,19 @@ function populatePortfolio() {
     // ---- Experience ----
     const expEl = document.getElementById('experience-container');
     d.experience.forEach(job => {
+        const hasCerts = job.certificates && job.certificates.length > 0;
+        const certsHTML = hasCerts
+            ? `<div class="cert-section">
+                <span class="cert-label"><i class="fas fa-certificate"></i> Certificates</span>
+                <div class="cert-links">
+                    ${job.certificates.map(c => `
+                        <a href="${c.file}" target="_blank" rel="noopener" class="cert-btn">
+                            <i class="fas fa-file-pdf"></i> ${c.name}
+                        </a>`).join('')}
+                </div>
+               </div>`
+            : '';
+
         const item = document.createElement('div');
         item.className = 'timeline-item terminal-card reveal';
         item.innerHTML = `
@@ -106,6 +119,7 @@ function populatePortfolio() {
             <ul class="timeline-responsibilities">
                 ${job.responsibilities.map(r => `<li>${r}</li>`).join('')}
             </ul>
+            ${certsHTML}
         `;
         expEl.appendChild(item);
     });
@@ -135,12 +149,19 @@ function populatePortfolio() {
     // ---- Education ----
     const eduEl = document.getElementById('education-container');
     d.education.forEach(edu => {
+        const certHTML = edu.certificate
+            ? `<a href="${edu.certificate}" target="_blank" rel="noopener" class="cert-btn" style="margin-top:0.75rem;display:inline-flex;">
+                   <i class="fas fa-file-pdf"></i> View Degree Certificate
+               </a>`
+            : `<span class="cert-placeholder"><i class="fas fa-clock"></i> Certificate available Jun 2026</span>`;
+
         const item = document.createElement('div');
         item.className = 'edu-item';
         item.innerHTML = `
             <div class="edu-degree">${edu.degree}</div>
             <div class="edu-inst">${edu.institution}</div>
             <div class="edu-details mt-2">${edu.period} &nbsp;|&nbsp; ${edu.details}</div>
+            ${certHTML}
         `;
         eduEl.appendChild(item);
     });
@@ -148,15 +169,31 @@ function populatePortfolio() {
     // ---- Achievements ----
     const achEl = document.getElementById('achievements-container');
     d.achievements.forEach(ach => {
-        const item = document.createElement('div');
-        item.className = 'achievement-item';
-        item.innerHTML = `
-            <div class="achievement-date"><i class="fas fa-calendar-check"></i>&nbsp; ${ach.period}</div>
-            <ul class="achievement-list">
-                ${ach.details.map(det => `<li>${det}</li>`).join('')}
-            </ul>
-        `;
-        achEl.appendChild(item);
+        ach.items.forEach(item => {
+            const imageHTML = item.image
+                ? `<div class="ach-image-wrap">
+                       <img src="${item.image}" alt="${item.title}" class="ach-image" onerror="this.parentElement.style.display='none'">
+                   </div>`
+                : '';
+
+            const linkHTML = item.link
+                ? `<a href="${item.link}" target="_blank" rel="noopener" class="ach-link-btn">
+                       <i class="fab fa-linkedin"></i> ${item.linkLabel || 'View Post'}
+                   </a>`
+                : '';
+
+            const card = document.createElement('div');
+            card.className = 'achievement-card';
+            card.innerHTML = `
+                ${imageHTML}
+                <div class="ach-content">
+                    <div class="ach-title"><i class="fas fa-trophy"></i> ${item.title}</div>
+                    <p class="ach-desc">${item.description}</p>
+                    ${linkHTML}
+                </div>
+            `;
+            achEl.appendChild(card);
+        });
     });
 
     // ---- Contact CTA ----

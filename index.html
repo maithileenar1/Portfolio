@@ -52,46 +52,60 @@
         <!-- ════ HERO ════ -->
         <section id="hero">
             <div class="container">
-                <div class="hero-terminal terminal-card reveal">
-                    <!-- Terminal top bar -->
-                    <div class="card-header-bar">
-                        <span class="dot dot-r"></span>
-                        <span class="dot dot-y"></span>
-                        <span class="dot dot-g"></span>
-                        <span class="card-filename">portfolio.exe — bash — 120×40</span>
+                <div class="hero-layout reveal">
+
+                    <!-- LEFT: Terminal content -->
+                    <div class="hero-terminal terminal-card">
+                        <div class="card-header-bar">
+                            <span class="dot dot-r"></span>
+                            <span class="dot dot-y"></span>
+                            <span class="dot dot-g"></span>
+                            <span class="card-filename">portfolio.exe — bash — 120×40</span>
+                        </div>
+
+                        <p class="terminal-prompt"><span>maithilee@portfolio</span>:~$ ./init_profile.sh</p>
+                        <h1 id="hero-name" data-text="MAITHILEE DOLHARKAR">MAITHILEE DOLHARKAR</h1>
+                        <h2 id="hero-title">Technology Graduate | Engineering &amp; QA | Data Governance</h2>
+
+                        <div class="hero-badges" id="contact-info"></div>
+
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="2">0</span>
+                                <span class="stat-label">YRS Experience</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="3">0</span>
+                                <span class="stat-label">Key Projects</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="471495">0</span>
+                                <span class="stat-label">Records Processed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number" data-target="81">0</span>
+                                <span class="stat-label">% ML Recall Boost</span>
+                            </div>
+                        </div>
+
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary" id="btn-view-projects"><i class="fas fa-code"></i> View Projects</a>
+                            <a href="#contact" class="btn btn-secondary" id="btn-get-touch"><i class="fas fa-terminal"></i> Get in Touch</a>
+                        </div>
                     </div>
 
-                    <p class="terminal-prompt"><span>maithilee@portfolio</span>:~$ ./init_profile.sh</p>
-                    <h1 id="hero-name" data-text="MAITHILEE DOLHARKAR">MAITHILEE DOLHARKAR</h1>
-                    <h2 id="hero-title">Technology Graduate | Engineering &amp; QA | Data Governance</h2>
-
-                    <!-- Contact badges -->
-                    <div class="hero-badges" id="contact-info"></div>
-
-                    <!-- Quick stats -->
-                    <div class="hero-stats" id="hero-stats">
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="2">0</span>
-                            <span class="stat-label">YRS Experience</span>
+                    <!-- RIGHT: Profile image -->
+                    <div class="hero-image-wrap">
+                        <div class="hero-image-frame">
+                            <img id="hero-profile-img" src="assets/profile.png" alt="Maithilee Dolharkar" class="hero-profile-img">
+                            <div class="image-scan-line"></div>
                         </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="3">0</span>
-                            <span class="stat-label">Key Projects</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="471495">0</span>
-                            <span class="stat-label">Records Processed</span>
-                        </div>
-                        <div class="stat-item">
-                            <span class="stat-number" data-target="81">0</span>
-                            <span class="stat-label">% ML Recall Boost</span>
-                        </div>
+                        <div class="image-corner tl"></div>
+                        <div class="image-corner tr"></div>
+                        <div class="image-corner bl"></div>
+                        <div class="image-corner br"></div>
                     </div>
 
-                    <div class="hero-actions">
-                        <a href="#projects" class="btn btn-primary" id="btn-view-projects"><i class="fas fa-code"></i> View Projects</a>
-                        <a href="#contact" class="btn btn-secondary" id="btn-get-touch"><i class="fas fa-terminal"></i> Get in Touch</a>
-                    </div>
                 </div>
             </div>
         </section>
@@ -142,21 +156,21 @@
             </div>
         </section>
 
-        <!-- ════ EDUCATION & ACHIEVEMENTS ════ -->
+        <!-- ════ EDUCATION ════ -->
         <section id="education">
             <div class="container reveal">
-                <div class="edu-grid">
-                    <div>
-                        <h3 class="section-title">Education</h3>
-                        <div class="section-divider"></div>
-                        <div id="education-container"></div>
-                    </div>
-                    <div>
-                        <h3 class="section-title">Achievements</h3>
-                        <div class="section-divider"></div>
-                        <div id="achievements-container"></div>
-                    </div>
-                </div>
+                <h3 class="section-title">Education</h3>
+                <div class="section-divider"></div>
+                <div id="education-container"></div>
+            </div>
+        </section>
+
+        <!-- ════ ACHIEVEMENTS ════ -->
+        <section id="achievements">
+            <div class="container reveal">
+                <h3 class="section-title">Achievements &amp; Volunteering</h3>
+                <div class="section-divider"></div>
+                <div id="achievements-container"></div>
             </div>
         </section>
 

@@ -5,16 +5,15 @@ const portfolioData = {
         location: "Melbourne, VIC",
         phone: "(+61) 469 387 557",
         email: "maithilee478@gmail.com",
-        linkedin: "https://linkedin.com/in/" // Placeholder
+        linkedin: "https://linkedin.com/in/", // Replace with your full LinkedIn URL
+        profileImage: "assets/profile.png"   // Replace with your own photo: assets/your-photo.jpg
     },
     summary: "Master of Data Science graduate (Deakin University, Jun 2026) with two years of professional experience in software development, data engineering, and analytics across enterprise and government domains. Proficient in Python, SQL, Azure, and Agile/SDLC delivery. Eager to contribute across software engineering, QA, and data governance rotations. Experienced in AWS and API Testing, with a strong emphasis on optimizing customer experience utilizing database management techniques. Holds full Australian work rights and is available to commence July 2026.",
     skills: {
         "Languages & Scripting": ["Python (Pandas, Scikit-learn, PySpark)", "SQL", "R", "AL Language"],
         "Software & Engineering": ["SDLC", "ETL Pipelines", "Medallion Architecture", "Delta Lake", "Star Schema", "REST APIs"],
         "Cloud & Platforms": ["Microsoft Azure", "Microsoft Fabric", "Power BI (DAX)", "Microsoft Dynamics 365", "AWS"],
-        "QA & Testing": ["Data Quality Validation", "Defect Management", "Pipeline Testing", "Manual Testing", "Automation", "Documentation"],
-        "Tools & Practices": ["Git", "Agile/Scrum", "Streamlit", "Plotly", "Jupyter", "Microsoft Office Suite", "Microsoft Excel"],
-        "Data Governance": ["Data Mapping", "Data Modelling", "RLS", "Schema Design", "Compliance Frameworks"]
+        "Tools & Practices": ["Git", "Agile/Scrum", "Streamlit", "Plotly", "Jupyter", "Microsoft Office Suite", "Microsoft Excel"]
     },
     experience: [
         {
@@ -25,6 +24,10 @@ const portfolioData = {
             responsibilities: [
                 "Designed and maintained ETL data pipelines processing 50,000+ rows of sales data, built demand forecasting models, and delivered 5+ Power BI dashboards which reduced stock wastage by 12% and cutting manual reporting time by 22%.",
                 "Applied structured testing and validation at each pipeline stage, ensuring data accuracy and integrity for stakeholder reporting; followed best practices aligned with SDLC principles, incorporating API Testing protocols to enhance data flow efficiency."
+            ],
+            certificates: [
+                // Add your certificates here. Example:
+                // { name: "Experience Certificate", file: "assets/certs/nexton_exp_cert.pdf" }
             ]
         },
         {
@@ -34,7 +37,11 @@ const portfolioData = {
             period: "Aug 2022 – Jun 2023",
             responsibilities: [
                 "Developed and tested AL language solutions within Microsoft Dynamics 365, integrated Power BI dashboards, and improved data accuracy across sales and operations by 10% using Microsoft Azure cloud platforms.",
-                "Worked within an Agile/Scrum delivery framework across a multidisciplinary team, contributing to sprint planning, defect resolution, and stakeholder reporting ,building the collaborative, client-focused skills central to VicRoads' graduate program, with a focus on enhancing customer experience through innovative mobile application features."
+                "Worked within an Agile/Scrum delivery framework across a multidisciplinary team, contributing to sprint planning, defect resolution, and stakeholder reporting, building the collaborative, client-focused skills central to graduate programs, with a focus on enhancing customer experience through innovative mobile application features."
+            ],
+            certificates: [
+                // Add your certificates here. Example:
+                // { name: "Completion Certificate", file: "assets/certs/xebia_cert.pdf" }
             ]
         }
     ],
@@ -43,9 +50,9 @@ const portfolioData = {
             title: "Australian Healthcare & Hospital Performance Analytics Platform",
             tech: ["Microsoft Fabric", "Data Engineering", "Data Governance"],
             details: [
-                "Architected a full-stack Microsoft Fabric platform (Medallion Architecture) ingesting 5 government health datasets via automated pipelines, with data quality validation gates blocking refresh on failures which are directly applicable to VicRoads' data governance and registration/licensing modernization goals, incorporating coding best practices and digital transformation strategies.",
-                "Designed a Gold star schema with data mapping, modelling, and RLS by state/LHN, ensuring accurate, well governed data for analytics and decision-making across government stakeholders.",
-                "Produced comprehensive technical documentation across all pipeline stages, demonstrating the written communication and governance rigour expected in engineering and QA roles."
+                "Architected a full-stack Microsoft Fabric platform (Medallion Architecture) ingesting 5 government health datasets via automated pipelines, with data quality validation gates blocking refresh on failures — directly applicable to data governance and registration/licensing modernization goals.",
+                "Designed a Gold star schema with data mapping, modelling, and RLS by state/LHN, ensuring accurate, well-governed data for analytics and decision-making across government stakeholders.",
+                "Produced comprehensive technical documentation across all pipeline stages, demonstrating written communication and governance rigour expected in engineering and QA roles."
             ]
         },
         {
@@ -61,7 +68,7 @@ const portfolioData = {
             title: "Survival Prediction for Liver Cirrhosis",
             tech: ["Clinical ML", "Testing & Validation", "Risk Classification"],
             details: [
-                "Built and benchmarked 6 classification models on clinical data, applying rigorous testing methodology to select the optimal model (Logistic Regression, F1-weighted: 0.7436) —mirroring QA practices of defect identification and iterative refinement.",
+                "Built and benchmarked 6 classification models on clinical data, applying rigorous testing methodology to select the optimal model (Logistic Regression, F1-weighted: 0.7436) — mirroring QA practices of defect identification and iterative refinement.",
                 "Applied dual feature importance methodology (ANOVA F-test + Permutation Importance) to validate model reliability, demonstrating the analytical and quality assurance mindset valued in technology roles."
             ]
         }
@@ -71,22 +78,42 @@ const portfolioData = {
             degree: "Master of Data Science",
             institution: "Deakin University, Melbourne",
             period: "Expected Jun 2026",
-            details: "WAM: 8 | Relevant coursework: Machine Learning, Data Engineering, Statistical Modelling, Mathematics for AI"
+            details: "WAM: 8 | Relevant coursework: Machine Learning, Data Engineering, Statistical Modelling, Mathematics for AI",
+            certificate: null  // Replace with your PDF path e.g. "assets/certs/masters_certificate.pdf"
         },
         {
             degree: "BTech in Computer Science Engineering",
             institution: "CMR Engineering College, India",
             period: "Graduated",
-            details: "CGPA: 7.74"
+            details: "CGPA: 7.74",
+            certificate: null  // Replace with your PDF path e.g. "assets/certs/btech_certificate.pdf"
         }
     ],
     achievements: [
         {
             period: "Jul 2023",
-            details: [
-                "GovHack Australia — Honourable Mention: Identified $15M in regenerative economy potential and projected 25% carbon emission reduction through smart infrastructure analysis for Victoria's green transit strategy.",
-                "Freelance Python educator to 10+ students, demonstrating communication skills and ability to explain technical concepts clearly to diverse audiences.",
-                "Event volunteer: F1 Australian Grand Prix, Australian Open, and major Melbourne events with Spark Event Group."
+            items: [
+                {
+                    title: "GovHack Australia — Honourable Mention",
+                    description: "Identified $15M in regenerative economy potential and projected 25% carbon emission reduction through smart infrastructure analysis for Victoria's green transit strategy.",
+                    image: "assets/govhack.jpg",      // Replace with your GovHack event/award image
+                    link: "https://linkedin.com/in/", // Replace with the LinkedIn post link showing winners
+                    linkLabel: "View on LinkedIn"
+                },
+                {
+                    title: "Freelance Python Educator",
+                    description: "Taught Python to 10+ students, demonstrating communication skills and ability to explain technical concepts clearly to diverse audiences.",
+                    image: null,
+                    link: null,
+                    linkLabel: null
+                },
+                {
+                    title: "Event Volunteer",
+                    description: "F1 Australian Grand Prix, Australian Open, and major Melbourne events with Spark Event Group.",
+                    image: null,
+                    link: null,
+                    linkLabel: null
+                }
             ]
         }
     ]
