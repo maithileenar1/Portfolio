@@ -5,8 +5,8 @@ const portfolioData = {
         location: "Melbourne, VIC",
         phone: "(+61) 469 387 557",
         email: "maithilee478@gmail.com",
-        linkedin: "https://linkedin.com/in/", // Replace with your full LinkedIn URL
-        profileImage: "assets/profile.png"   // Replace with your own photo: assets/your-photo.jpg
+        linkedin: "https://www.linkedin.com/in/maithilee-dolharkar-647b581ba/",
+        profileImage: "image.png"
     },
     summary: "Master of Data Science graduate (Deakin University, Jun 2026) with two years of professional experience in software development, data engineering, and analytics across enterprise and government domains. Proficient in Python, SQL, Azure, and Agile/SDLC delivery. Eager to contribute across software engineering, QA, and data governance rotations. Experienced in AWS and API Testing, with a strong emphasis on optimizing customer experience utilizing database management techniques. Holds full Australian work rights and is available to commence July 2026.",
     skills: {
@@ -26,8 +26,7 @@ const portfolioData = {
                 "Applied structured testing and validation at each pipeline stage, ensuring data accuracy and integrity for stakeholder reporting; followed best practices aligned with SDLC principles, incorporating API Testing protocols to enhance data flow efficiency."
             ],
             certificates: [
-                // Add your certificates here. Example:
-                // { name: "Experience Certificate", file: "assets/certs/nexton_exp_cert.pdf" }
+                { name: "Experience Certificate", file: "NextOnfoods.pdf" }
             ]
         },
         {
@@ -40,8 +39,7 @@ const portfolioData = {
                 "Worked within an Agile/Scrum delivery framework across a multidisciplinary team, contributing to sprint planning, defect resolution, and stakeholder reporting, building the collaborative, client-focused skills central to graduate programs, with a focus on enhancing customer experience through innovative mobile application features."
             ],
             certificates: [
-                // Add your certificates here. Example:
-                // { name: "Completion Certificate", file: "assets/certs/xebia_cert.pdf" }
+                { name: "Completion Certificate", file: "assets/certs/xebia_cert.pdf" }
             ]
         }
     ],
@@ -79,14 +77,14 @@ const portfolioData = {
             institution: "Deakin University, Melbourne",
             period: "Expected Jun 2026",
             details: "WAM: 8 | Relevant coursework: Machine Learning, Data Engineering, Statistical Modelling, Mathematics for AI",
-            certificate: null  // Replace with your PDF path e.g. "assets/certs/masters_certificate.pdf"
+            certificate: "DeakinMemo.pdf"  // Replace with your PDF path e.g. "assets/certs/masters_certificate.pdf"
         },
         {
             degree: "BTech in Computer Science Engineering",
             institution: "CMR Engineering College, India",
             period: "Graduated",
             details: "CGPA: 7.74",
-            certificate: null  // Replace with your PDF path e.g. "assets/certs/btech_certificate.pdf"
+            certificate: "BachelorsGraduationCertificate.pdf"// Replace with your PDF path e.g. "assets/certs/btech_certificate.pdf"
         }
     ],
     achievements: [
@@ -96,8 +94,8 @@ const portfolioData = {
                 {
                     title: "GovHack Australia — Honourable Mention",
                     description: "Identified $15M in regenerative economy potential and projected 25% carbon emission reduction through smart infrastructure analysis for Victoria's green transit strategy.",
-                    image: "assets/govhack.jpg",      // Replace with your GovHack event/award image
-                    link: "https://linkedin.com/in/", // Replace with the LinkedIn post link showing winners
+                    image: "govhack.jpg",
+                    link: "https://www.linkedin.com/feed/update/urn:li:activity:7274901392098496512/", // Replace with the LinkedIn post link showing winners
                     linkLabel: "View on LinkedIn"
                 },
                 {
