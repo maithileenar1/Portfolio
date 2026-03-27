@@ -39,7 +39,7 @@ const portfolioData = {
                 "Worked within an Agile/Scrum delivery framework across a multidisciplinary team, contributing to sprint planning, defect resolution, and stakeholder reporting, building the collaborative, client-focused skills central to graduate programs, with a focus on enhancing customer experience through innovative mobile application features."
             ],
             certificates: [
-                { name: "Completion Certificate", file: "assets/certs/xebia_cert.pdf" }
+                { name: "Completion Certificate", file: "internshipletter.pdf" }
             ]
         }
     ],
@@ -94,7 +94,7 @@ const portfolioData = {
                 {
                     title: "GovHack Australia — Honourable Mention",
                     description: "Identified $15M in regenerative economy potential and projected 25% carbon emission reduction through smart infrastructure analysis for Victoria's green transit strategy.",
-                    image: "govhack.jpg",
+                    image: "GH.png",
                     link: "https://www.linkedin.com/feed/update/urn:li:activity:7274901392098496512/", // Replace with the LinkedIn post link showing winners
                     linkLabel: "View on LinkedIn"
                 },
